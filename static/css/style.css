@@ -1,0 +1,203 @@
+/* Custom Stylesheet for Soil Health Monitoring App */
+
+:root {
+    --primary-color: #28a745;
+    --primary-light: #5dd879;
+    --primary-dark: #218838;
+    --accent-color: #17a2b8;
+    --text-color: #343a40;
+    --light-gray: #f8f9fa;
+    --medium-gray: #e9ecef;
+    --border-color: #dee2e6;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-color);
+    background-color: #f9f9f9;
+}
+
+/* Navbar Styling */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+.navbar-brand {
+    font-weight: 600;
+    color: var(--primary-color) !important;
+}
+
+/* Card Styling */
+.card {
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.card-header {
+    border-bottom: 1px solid var(--border-color);
+    background-color: white;
+    padding: 1rem 1.25rem;
+    border-top-left-radius: 10px !important;
+    border-top-right-radius: 10px !important;
+}
+
+/* Button Styling */
+.btn-success {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-success:hover {
+    background-color: var(--primary-dark);
+    border-color: var(--primary-dark);
+}
+
+.btn-outline-success {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-outline-success:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+/* Form Controls */
+.form-control:focus {
+    border-color: var(--primary-light);
+    box-shadow: 0 0 0 0.25rem rgba(40, 167, 69, 0.25);
+}
+
+/* Breadcrumb Styling */
+.breadcrumb {
+    background-color: transparent;
+    padding: 0.5rem 0;
+}
+
+.breadcrumb-item a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.breadcrumb-item.active {
+    color: var(--text-color);
+}
+
+/* Table Styling */
+.table th {
+    border-top: none;
+    border-bottom: 2px solid var(--border-color);
+    font-weight: 600;
+}
+
+.table td {
+    vertical-align: middle;
+}
+
+/* Badge Styling */
+.badge {
+    padding: 0.4em 0.6em;
+    font-weight: 500;
+    border-radius: 4px;
+}
+
+/* Progress Bar Styling */
+.progress {
+    border-radius: 10px;
+    background-color: var(--medium-gray);
+    margin: 0.5rem 0;
+}
+
+.progress-bar {
+    border-radius: 10px;
+}
+
+/* Nav Tab Styling */
+.nav-tabs {
+    border-bottom: 1px solid var(--border-color);
+}
+
+.nav-tabs .nav-link {
+    color: var(--text-color);
+    border: none;
+    padding: 0.5rem 1rem;
+}
+
+.nav-tabs .nav-link.active {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+    background-color: transparent;
+    font-weight: 600;
+}
+
+.nav-tabs .nav-link:hover {
+    border-color: transparent;
+    color: var(--primary-color);
+}
+
+/* List Group Styling */
+.list-group-item {
+    border: none;
+    border-bottom: 1px solid var(--border-color);
+    padding: 0.75rem 0;
+}
+
+.list-group-item:last-child {
+    border-bottom: none;
+}
+
+/* Alert Styling */
+.alert {
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+}
+
+/* Upload Button */
+#uploadButton {
+    background-color: var(--primary-color);
+    color: white;
+    transition: background-color 0.3s;
+}
+
+#uploadButton:hover {
+    background-color: var(--primary-dark);
+}
+
+/* File Preview */
+#uploadPreview {
+    background-color: var(--light-gray);
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+}
+
+/* Loading Indicator */
+#loadingIndicator {
+    padding: 2rem 0;
+}
+
+/* Charts */
+canvas {
+    max-height: 250px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .card {
+        margin-bottom: 1.5rem;
+    }
+    
+    h2 {
+        font-size: 1.75rem;
+    }
+    
+    .container {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+}
